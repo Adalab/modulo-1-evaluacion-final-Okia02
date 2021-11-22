@@ -1,0 +1,78 @@
+/*COLORS*/
+$brightOrange: #f26002;
+$white: #fff;
+$lightBlue: #8ccbea;
+$navyBlue: #0271bc;
+$darkBlue: #304268;
+$black: #000;
+
+/*FONT-WEIGHT*/
+$RegularFontWeight: 400;
+$MediumFontWeight: 500;
+
+/*FONT-FAMILY*/
+$fontBold: 'Roboto Slab', serif;
+$fontRegular: 'Roboto', sans-serif, $RegularFontWeight;
+$fontMedium: 'Roboto', sans-serif, $MediumFontWeight;
+
+/*FONT-SIZE*/
+$bigFont: 42px;
+$basicFont: 16px;
+$smallFont: 14px;
+$titleFont: 24px;
+$mediumFont: 18px;
+$btnFont: 20px;
+$tabletTitleFont: 26px;
+$deskTitleFont: 32px;
+
+/*ADALAB URL*/
+$adalabUrl: "https://adalab.es";
+
+/**************MIXINS*************/
+
+/*TITLES IN PAGE.HTML*/
+@mixin titleMain { 
+  font: $black $fontBold $titleFont;
+  @media all and (min-width: 768px) {
+    font: $tabletTitleFont;
+    line-height: 45px; 
+  }
+  @media all and (min-width: 1024px) {
+    font: $deskTitleFont;
+  }
+}
+
+/*ARTICLES-REASONS IN PAGE.HTML*/
+@mixin mainReason {
+.reason {
+    color: $black;
+    text-transform: capitalize;
+    &__title {
+        font: $fontBold $mediumFont;
+        text-align: center;
+        margin-right: 4.25rem;
+        margin-left: 4.25rem;
+        @media all and (min-width: 768px) {
+           font: $fontBold $titleFont;
+           margin-bottom: 14px;
+        }
+    }
+    &__text {
+        font: $fontRegular $mediumFont;
+        text-align: center;
+        margin-right: 4.375rem;
+        margin-left: 4.375rem;
+         @media all and (min-width: 768px) {
+           font: $btnFont;
+           margin-bottom: 14px;
+        }
+    }
+}
+}
+
+/*LINKS IN FOOTER.HTML*/
+@mixin footerLink {
+  font: $fontRegular $basicFont $white;
+  text-align: center;
+text-transform: uppercase;
+}
