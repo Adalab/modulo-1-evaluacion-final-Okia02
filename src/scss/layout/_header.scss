@@ -1,0 +1,73 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 15px;
+  @media all and (min-width: 768px) {
+    padding: 0 39px;
+  }
+  @media all and (min-width: 1280px) {
+    padding: 0 275px;
+  }
+  &__logo {
+    width: 44px;
+    height: 44px;
+    background-color: $navyBlue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-family: $fontBold;
+    font-size: 42px;
+    line-height: 55px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+    }
+  }
+  &__subtitle {
+    font-family: $fontRegular;
+    font-size: $basicFont;
+    text-transform: none;
+    @media all and (min-width: 768px) {
+      font-size: $titleFont;
+    }
+  }
+  &__btn {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    padding: 18px 12px 15.3px 13px;
+    margin-top: 45px;
+    margin-bottom: 53px;
+    border-radius: 50%;
+    @media all and (min-width: 768px) {
+      margin-bottom: 45px;
+      margin-top: 30px;
+    }
+    @media all and (min-width: 1280px) {
+      margin-bottom: 13px;
+    }
+  }
+}

@@ -11,9 +11,9 @@ $RegularFontWeight: 400;
 $MediumFontWeight: 500;
 
 /*FONT-FAMILY*/
-$fontBold: 'Roboto Slab', serif;
-$fontRegular: 'Roboto', sans-serif, $RegularFontWeight;
-$fontMedium: 'Roboto', sans-serif, $MediumFontWeight;
+$fontBold: "Roboto Slab", serif;
+$fontRegular: "Roboto", sans-serif, $RegularFontWeight;
+$fontMedium: "Roboto", sans-serif, $MediumFontWeight;
 
 /*FONT-SIZE*/
 $bigFont: 42px;
@@ -25,17 +25,17 @@ $btnFont: 20px;
 $tabletTitleFont: 26px;
 $deskTitleFont: 32px;
 
-/*ADALAB URL*/
-$adalabUrl: "https://adalab.es";
+/*ADALAB URL
+$adalabUrl: url("https://adalab.es");*/
 
 /**************MIXINS*************/
 
 /*TITLES IN PAGE.HTML*/
-@mixin titleMain { 
+@mixin titleMain {
   font: $black $fontBold $titleFont;
   @media all and (min-width: 768px) {
     font: $tabletTitleFont;
-    line-height: 45px; 
+    line-height: 45px;
   }
   @media all and (min-width: 1024px) {
     font: $deskTitleFont;
@@ -44,35 +44,35 @@ $adalabUrl: "https://adalab.es";
 
 /*ARTICLES-REASONS IN PAGE.HTML*/
 @mixin mainReason {
-.reason {
+  .reason {
     color: $black;
     text-transform: capitalize;
     &__title {
-        font: $fontBold $mediumFont;
-        text-align: center;
-        margin-right: 4.25rem;
-        margin-left: 4.25rem;
-        @media all and (min-width: 768px) {
-           font: $fontBold $titleFont;
-           margin-bottom: 14px;
-        }
+      font: $fontBold $mediumFont;
+      text-align: center;
+      margin-right: 4.25rem;
+      margin-left: 4.25rem;
+      @media all and (min-width: 768px) {
+        font: $fontBold $titleFont;
+        margin-bottom: 14px;
+      }
     }
     &__text {
-        font: $fontRegular $mediumFont;
-        text-align: center;
-        margin-right: 4.375rem;
-        margin-left: 4.375rem;
-         @media all and (min-width: 768px) {
-           font: $btnFont;
-           margin-bottom: 14px;
-        }
+      font: $fontRegular $mediumFont;
+      text-align: center;
+      margin-right: 4.375rem;
+      margin-left: 4.375rem;
+      @media all and (min-width: 768px) {
+        font: $btnFont;
+        margin-bottom: 14px;
+      }
     }
-}
+  }
 }
 
 /*LINKS IN FOOTER.HTML*/
 @mixin footerLink {
   font: $fontRegular $basicFont $white;
   text-align: center;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
