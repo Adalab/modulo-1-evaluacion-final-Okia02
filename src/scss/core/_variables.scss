@@ -75,7 +75,9 @@ $adalabUrl: url("https://adalab.es");*/
 
 /*LINKS IN FOOTER.HTML*/
 @mixin footerLink {
-  font: $fontRegular $basicFont $white;
+  @include robotoRegular;
+  font-size: $basicFont;
+  color: $white;
   text-align: center;
   text-transform: uppercase;
 }

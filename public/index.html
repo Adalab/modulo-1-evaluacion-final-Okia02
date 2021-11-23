@@ -21,7 +21,7 @@
 
   <body>
     
-      <header class="header">
+      <header class="header" id="header">
         <div class="header__logo">
           <a class="header__logo--link" href="https://adalab.es">
             <img
@@ -102,43 +102,59 @@
 
    
 
-    <footer class="footer">
-      <div class="footer__btn">
-        <span class="footer__btn--box"
-          ><a class="footer__btn--link" href=""></a
-        ></span>
-      </div>
+    
+      <footer class="footer">
 
-      <div class="footer__author">
-        <small class="footer__author--copyright">©2021</small>
-        <small class="footer__author--message">We &hearts components</small>
-      </div>
+        <div class="footer__arrow">
+          <a class="footer__arrow--link" href="#header"> <img class="footer__arrow--img" src="./assets/images/ico-arrow.svg" alt="flecha hacia arriba"/></a>
+        </div>
 
-      <div class="footer__nav">
-        <nav class="footer__nav--links">
-          <ul class="list">
-            <li class="list__item"><a class="list__link" href="">articles</a></li>
-            <li class="list__item"><a class="list__link" href="">books</a></li>
-            <li class="list__item"><a class="list__link" href="">events</a></li>
-            <li class="list__item"><a class="list__link" href="">reasons</a></li>
-            <li class="list__item"><a class="list__link" href="">tips</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="footer__links">
+          <nav class="footer__links--nav">
+            <ul class="list">
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">articles</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">books</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">events</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">reasons</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">tips</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__links--rrss">
+            <ul class="list">
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">twitter</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">instagram</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="https://adalab.es">mastodon.social</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-      <div class="footer__rrss">
-        <nav class="footer__rrss--links">
-          <ul class="list">
-            <li class="list__item"><a class="list__link" href="">twitter</a></li>
-            <li class="list__item"><a class="list__link" href="">instagram</a></li>
-            <li class="list__item">
-              <a class="list__link" href="">mastodon.social</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <div class="footer__rights">
+          <div class="footer__rights--copy">
+            <small>©2021</small>
+          </div>
+          <div class="footer__rights--copy">
+            <small>We <i class="heart">&#x2764;</i> components</small>
+          </div>
+        </div>
+      </footer>
 
-    </footer>
+    
   </body>
   
 </html>
