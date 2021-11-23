@@ -43,8 +43,8 @@ input {
   border-radius: 0; }
 
 /*COLORS*/
-/*FONT-WEIGHT*/
 /*FONT-FAMILY*/
+/*ROBOTO FONT MIXINS*/
 /*FONT-SIZE*/
 /*ADALAB URL
 $adalabUrl: url("https://adalab.es");*/
@@ -95,7 +95,8 @@ $adalabUrl: url("https://adalab.es");*/
         font-size: 100px;
         line-height: 132px; } }
   .header__subtitle {
-    font-family: "Roboto", sans-serif, 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     text-transform: none; }
     @media all and (min-width: 768px) {
@@ -119,5 +120,78 @@ $adalabUrl: url("https://adalab.es");*/
     @media all and (min-width: 1280px) {
       .header__btn {
         margin-bottom: 13px; } }
+
+.main__top {
+  background-color: #fff; }
+
+.main__bottom {
+  background-color: #eff9ff; }
+
+.module2 {
+  padding-left: 15px;
+  text-align: left;
+  margin-top: 30px; }
+  @media all and (min-width: 768px) {
+    .module2 {
+      padding-left: 39px; } }
+  @media all and (min-width: 1024px) {
+    .module2 {
+      padding-left: 275px;
+      margin-top: 60px; } }
+  .module2__tips {
+    color: #8ccbea;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; }
+  .module2__news--title {
+    margin-bottom: 15px;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: #000;
+    text-transform: capitalize; }
+    @media all and (min-width: 768px) {
+      .module2__news--title {
+        font: 26px;
+        line-height: 45px; } }
+    @media all and (min-width: 1024px) {
+      .module2__news--title {
+        font: 32px; } }
+    @media all and (min-width: 768px) {
+      .module2__news--title {
+        margin-bottom: 30px; } }
+  .module2__news--text {
+    color: #4a4a4a;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding-right: 15px; }
+    @media all and (min-width: 768px) {
+      .module2__news--text {
+        padding-right: 60px; } }
+    @media all and (min-width: 1024px) {
+      .module2__news--text {
+        padding-right: 275px; } }
+  .module2__btn {
+    width: 76px;
+    height: 45px;
+    border: 2px solid #f26002;
+    border-radius: 22.5px;
+    margin: 30px 0 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media all and (min-width: 768px) {
+      .module2__btn {
+        width: 91px;
+        margin-bottom: 60px; } }
+    @media all and (min-width: 1280px) {
+      .module2__btn {
+        width: 160px; } }
+    .module2__btn--link {
+      color: #f26002;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      line-height: 45px;
+      text-transform: capitalize; }
 
 /*# sourceMappingURL=main.css.map */

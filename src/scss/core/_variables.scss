@@ -6,14 +6,23 @@ $navyBlue: #0271bc;
 $darkBlue: #304268;
 $black: #000;
 
-/*FONT-WEIGHT*/
-$RegularFontWeight: 400;
-$MediumFontWeight: 500;
-
 /*FONT-FAMILY*/
-$fontBold: "Roboto Slab", serif;
-$fontRegular: "Roboto", sans-serif, $RegularFontWeight;
-$fontMedium: "Roboto", sans-serif, $MediumFontWeight;
+$fontBold: 'Roboto Slab', serif;
+$fontRegular: 'Roboto', sans-serif;
+$fontMedium: 'Roboto', sans-serif;
+
+/*ROBOTO FONT MIXINS*/
+
+@mixin robotoRegular {
+  font-family: $fontRegular;
+  font-weight: 400;
+}
+@mixin robotoMedium {
+  font-family: $fontMedium;
+  font-weight: 500;
+}
+
+
 
 /*FONT-SIZE*/
 $bigFont: 42px;
@@ -32,7 +41,10 @@ $adalabUrl: url("https://adalab.es");*/
 
 /*TITLES IN PAGE.HTML*/
 @mixin titleMain {
-  font: $black $fontBold $titleFont;
+  font-family: $fontBold;
+  font-size: $titleFont;
+  color: $black;
+  text-transform: capitalize;
   @media all and (min-width: 768px) {
     font: $tabletTitleFont;
     line-height: 45px;
