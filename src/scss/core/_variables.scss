@@ -7,9 +7,9 @@ $darkBlue: #304268;
 $black: #000;
 
 /*FONT-FAMILY*/
-$fontBold: 'Roboto Slab', serif;
-$fontRegular: 'Roboto', sans-serif;
-$fontMedium: 'Roboto', sans-serif;
+$fontBold: "Roboto Slab", serif;
+$fontRegular: "Roboto", sans-serif;
+$fontMedium: "Roboto", sans-serif;
 
 /*ROBOTO FONT MIXINS*/
 
@@ -21,8 +21,6 @@ $fontMedium: 'Roboto', sans-serif;
   font-family: $fontMedium;
   font-weight: 500;
 }
-
-
 
 /*FONT-SIZE*/
 $bigFont: 42px;
@@ -55,30 +53,23 @@ $adalabUrl: url("https://adalab.es");*/
 }
 
 /*ARTICLES-REASONS IN PAGE.HTML*/
-@mixin mainReason {
-  .reason {
-    color: $black;
-    text-transform: capitalize;
-    &__title {
-      font: $fontBold $mediumFont;
-      text-align: center;
-      margin-right: 4.25rem;
-      margin-left: 4.25rem;
-      @media all and (min-width: 768px) {
-        font: $fontBold $titleFont;
-        margin-bottom: 14px;
-      }
-    }
-    &__text {
-      font: $fontRegular $mediumFont;
-      text-align: center;
-      margin-right: 4.375rem;
-      margin-left: 4.375rem;
-      @media all and (min-width: 768px) {
-        font: $btnFont;
-        margin-bottom: 14px;
-      }
-    }
+@mixin module3Title {
+  font-family: $fontBold;
+  font-size: $mediumFont;
+  text-align: center;
+  padding: 0 68px;
+  @media all and (min-width: 768px) {
+    font-size: $titleFont;
+    margin-bottom: 14px;
+  }
+}
+@mixin module3Text {
+  @include robotoRegular;
+  text-align: center;
+  padding: 0 70px 45px 70px;
+  @media all and (min-width: 768px) {
+    font: $btnFont;
+    padding-bottom: 60px;
   }
 }
 
