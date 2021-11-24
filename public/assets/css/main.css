@@ -3,10 +3,62 @@
   text-decoration: none; }
 
 /*SOURCE https://www.boag.online/blog/css-reset*/
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,20 +70,29 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   -moz-text-size-adjust: none;
   text-size-adjust: none; }
 
-footer, header, nav, section, main {
+footer,
+header,
+nav,
+section,
+main {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style-type: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -44,13 +105,11 @@ input {
 
 /*COLORS*/
 /*FONT-FAMILY*/
-/*ROBOTO FONT MIXINS*/
 /*FONT-SIZE*/
-/*ADALAB URL
-$adalabUrl: url("https://adalab.es");*/
-/**************MIXINS*************/
+/****************************MIXINS***************************/
+/*ROBOTO FONTS*/
 /*TITLES IN PAGE.HTML*/
-/*ARTICLES-REASONS IN PAGE.HTML*/
+/*MODULE3 IN PAGE.HTML*/
 /*LINKS IN FOOTER.HTML*/
 .header {
   height: 100vh;
@@ -62,7 +121,11 @@ $adalabUrl: url("https://adalab.es");*/
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 15px; }
+  padding: 0 15px;
+  /*LOGO__HAMBURGUER*/
+  /*TITLE*/
+  /*SUBTITLE*/
+  /*ARROW__TO__REASONS*/ }
   @media all and (min-width: 768px) {
     .header {
       padding: 0 39px; } }
@@ -141,14 +204,16 @@ $adalabUrl: url("https://adalab.es");*/
       .main__bottom--title {
         font: 32px; } }
 
+/*ASIDE__TOP*/
 .module2 {
   padding-left: 15px;
   text-align: left;
-  margin-top: 30px; }
+  margin-top: 30px;
+  /*ASIDE__BTN*/ }
   @media all and (min-width: 768px) {
     .module2 {
       padding-left: 39px; } }
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 1280px) {
     .module2 {
       padding-left: 275px;
       margin-top: 60px; } }
@@ -182,7 +247,7 @@ $adalabUrl: url("https://adalab.es");*/
     @media all and (min-width: 768px) {
       .module2__news--text {
         padding-right: 60px; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1280px) {
       .module2__news--text {
         padding-right: 275px; } }
   .module2__btn {
@@ -213,16 +278,18 @@ $adalabUrl: url("https://adalab.es");*/
       line-height: 45px;
       text-transform: capitalize; }
 
+/*SECTION__BOTTOM*/
 .module3 {
   color: #000;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto); }
+  grid-template-rows: repeat(6, auto);
+  /*ARTICLES*/ }
   @media all and (min-width: 768px) {
     .module3 {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 30px 68px; } }
+      grid-template-rows: 40% 60%; } }
   .module3__one--title {
     font-family: "Roboto Slab", serif;
     font-size: 18px;
@@ -235,10 +302,8 @@ $adalabUrl: url("https://adalab.es");*/
         margin-bottom: 14px; } }
     @media all and (min-width: 768px) {
       .module3__one--title {
-        padding-left: 38px;
-        padding-right: 30px;
         grid-column: 1/4; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1280px) {
       .module3__one--title {
         padding: 0 30px 0 85px; } }
   .module3__one--text {
@@ -253,10 +318,8 @@ $adalabUrl: url("https://adalab.es");*/
         padding-bottom: 60px; } }
     @media all and (min-width: 768px) {
       .module3__one--text {
-        padding-left: 35.7px;
-        padding-right: 27.7px;
         grid-column: 1/4; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1280px) {
       .module3__one--text {
         padding: 0 26.2px 0 81.2px; } }
   .module3__two--title {
@@ -271,9 +334,8 @@ $adalabUrl: url("https://adalab.es");*/
         margin-bottom: 14px; } }
     @media all and (min-width: 768px) {
       .module3__two--title {
-        padding-right: 30px;
         grid-column: 2/4; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1280px) {
       .module3__two--title {
         padding-right: 30px; } }
   .module3__two--text {
@@ -288,14 +350,10 @@ $adalabUrl: url("https://adalab.es");*/
         padding-bottom: 60px; } }
     @media all and (min-width: 768px) {
       .module3__two--text {
-        padding-right: 27.7px;
         grid-column: 2/4; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1280px) {
       .module3__two--text {
         padding-right: 26.2px; } }
-  @media all and (min-width: 1024px) {
-    .module3__three {
-      padding-right: 85px; } }
   .module3__three--title {
     font-family: "Roboto Slab", serif;
     font-size: 18px;
@@ -308,7 +366,6 @@ $adalabUrl: url("https://adalab.es");*/
         margin-bottom: 14px; } }
     @media all and (min-width: 768px) {
       .module3__three--title {
-        padding-right: 40px;
         grid-column: 3/4; } }
   .module3__three--text {
     font-family: "Roboto", sans-serif;
@@ -322,13 +379,13 @@ $adalabUrl: url("https://adalab.es");*/
         padding-bottom: 60px; } }
     @media all and (min-width: 768px) {
       .module3__three--text {
-        padding-right: 40px;
         grid-column: 3/4; } }
 
+/*REASONS__BTN*/
 .btn {
   display: flex;
   justify-content: center;
-  padding: 60px;
+  padding: 0 60px 58px;
   transition: all 0.3s ease 0s; }
   .btn :hover {
     background: #304268; }
@@ -345,6 +402,7 @@ $adalabUrl: url("https://adalab.es");*/
     font-weight: 500;
     line-height: 45px; }
 
+/*ARROW__TO__HEADER*/
 .footer__arrow {
   height: 45px;
   width: 45px;
@@ -376,12 +434,16 @@ $adalabUrl: url("https://adalab.es");*/
   padding: 45px;
   line-height: 30px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  /*LINKS*/
+  /*INFO__RIGHTS*/ }
   @media all and (min-width: 768px) {
     .footer {
       flex-direction: row; } }
   .footer__nav {
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    /*LINKS__PAGE*/
+    /*LINKS__RRSS*/ }
     @media all and (min-width: 768px) {
       .footer__nav {
         width: 60%;
@@ -399,13 +461,14 @@ $adalabUrl: url("https://adalab.es");*/
           justify-content: flex-start;
           padding-left: 10%;
           padding-right: 50%; } }
-      @media all and (min-width: 1024px) {
+      @media all and (min-width: 1280px) {
         .footer__nav--page {
           padding-left: 0;
           padding-right: 0; } }
     .footer__nav--rrss {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding-bottom: 15px; }
       @media all and (min-width: 768px) {
         .footer__nav--rrss {
           width: 30%;
@@ -426,11 +489,12 @@ $adalabUrl: url("https://adalab.es");*/
         align-items: flex-start;
         order: -1;
         text-align: start; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1280px) {
       .footer__rights {
         width: 40%;
         padding-left: 20%; } }
 
+/*URL__STYLES*/
 .urlFooter {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -439,6 +503,7 @@ $adalabUrl: url("https://adalab.es");*/
   text-align: center;
   text-transform: uppercase; }
 
+/*HEART__COLOR*/
 .heart {
   color: #f00; }
 

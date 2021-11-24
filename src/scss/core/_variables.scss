@@ -11,17 +11,6 @@ $fontBold: "Roboto Slab", serif;
 $fontRegular: "Roboto", sans-serif;
 $fontMedium: "Roboto", sans-serif;
 
-/*ROBOTO FONT MIXINS*/
-
-@mixin robotoRegular {
-  font-family: $fontRegular;
-  font-weight: 400;
-}
-@mixin robotoMedium {
-  font-family: $fontMedium;
-  font-weight: 500;
-}
-
 /*FONT-SIZE*/
 $bigFont: 42px;
 $basicFont: 16px;
@@ -32,10 +21,17 @@ $btnFont: 20px;
 $tabletTitleFont: 26px;
 $deskTitleFont: 32px;
 
-/*ADALAB URL
-$adalabUrl: url("https://adalab.es");*/
+/****************************MIXINS***************************/
 
-/**************MIXINS*************/
+/*ROBOTO FONTS*/
+@mixin robotoRegular {
+  font-family: $fontRegular;
+  font-weight: 400;
+}
+@mixin robotoMedium {
+  font-family: $fontMedium;
+  font-weight: 500;
+}
 
 /*TITLES IN PAGE.HTML*/
 @mixin titleMain {
@@ -52,7 +48,7 @@ $adalabUrl: url("https://adalab.es");*/
   }
 }
 
-/*ARTICLES-REASONS IN PAGE.HTML*/
+/*MODULE3 IN PAGE.HTML*/
 @mixin module3Title {
   font-family: $fontBold;
   font-size: $mediumFont;
@@ -63,6 +59,7 @@ $adalabUrl: url("https://adalab.es");*/
     margin-bottom: 14px;
   }
 }
+
 @mixin module3Text {
   @include robotoRegular;
   text-align: center;
