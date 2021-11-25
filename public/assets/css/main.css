@@ -430,8 +430,9 @@ input {
     transform: translate(-50%, -100px); } }
 
 .footer {
-  background-color: #304268;
+  background-color: #0271bc;
   padding: 45px;
+  margin: 45px 0;
   line-height: 30px;
   display: flex;
   flex-direction: column;
@@ -477,7 +478,7 @@ input {
   .footer__rights {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     text-align: center; }
     @media all and (min-width: 768px) {
@@ -487,7 +488,6 @@ input {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        order: -1;
         text-align: start; } }
     @media all and (min-width: 1280px) {
       .footer__rights {
@@ -499,12 +499,15 @@ input {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   text-align: center;
   text-transform: uppercase; }
 
 /*HEART__COLOR*/
 .heart {
   color: #f00; }
+
+.orange {
+  color: #f26002; }
 
 /*# sourceMappingURL=main.css.map */

@@ -74,7 +74,7 @@ $deskTitleFont: 32px;
 @mixin footerLink {
   @include robotoRegular;
   font-size: $basicFont;
-  color: $white;
+  color: $black;
   text-align: center;
   text-transform: uppercase;
 }
